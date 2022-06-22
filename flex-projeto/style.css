@@ -110,3 +110,17 @@ header .menu{
 #quem-somos img{
   min-width: 420px; /* aumento da largura da imagem */
 }
+
+.container-externo{ /* barra de conteudos*/
+  background-color: #122A57; /* cor de preenchimento para a barra*/
+  width: 100%; /* largura de 100% da tela*/
+}
+
+#servicos{
+  flex-direction: column; /*tira os itens da disposicao row atribuida pela classe flex-container neste caso especifico servicos dos outros itens*/
+}
+
+.list-servicos{
+  display: flex; /*disposicao inline(row) dos elementos*/
+  justify-content: space-around; /* separacao uniforme entre os itens*/
+}
