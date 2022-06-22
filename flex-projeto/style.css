@@ -1,45 +1,112 @@
 *{
   margin: 0;
-  padding: 0;
+  padding: 0; /* zerar predefinicoes do navegador */
   font-family: 'Open Sans', sans-serif;
 }
 
 ul{
   list-style: none;
-  margin: 0;
+  margin: 0; /* zerar predefinicoes do navegador */
   padding: 0;
 }
 
 ul li a{
-  text-decoration: none;
+  text-decoration: none; /* remover sublinhado dos links */
+}
+
+div img{ /* responsividade para as imagens */
+  display: block; /* comportamento de block */
+  width: 100%; /* permite estar sempre totalmente na tela independente da reducao */
 }
 
 .flex-container{
-  display: flex;
-  max-width: 992px;
-  margin: auto;
-  width: 100%;
+  display: flex; /* torna os itens na disposicao inline */
+  max-width: 992px; /* largura desejada do container */
+  margin: auto; /* distribui margem na direita e esquerda proporcionalmente */
+  width: 100%; /* distribuicao dos itens em ocupar o container */
 }
 
 header{
   background-color: #122A57;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  color: #fff;
+  height: 100px; /* altura do header */
+  display: flex; /* aplicado para poder usar o aling-items */
+  align-items: center; /* alinhamento dos itens ao centro no eixo vertical */
+  color: #fff; /* cor do h1 */
 }
 
 header .list-items{
-  display: flex;
-  max-width: 260px;
-  width: 100%;
-  justify-content: space-between;
+  display: flex; /* alinhamento inline dos links do menu */
+  max-width: 260px; /* largura maxima do container dos links do menu */
+  width: 100%; /* utilizacao maxima da largura estabelecida */
+  justify-content: space-between; /* separacao entre os elementos de forma uniforme */
+  align-items: center; /* posicionar os links linhados verticalmente */
 }
 
 header .menu{
-  justify-content: space-between;
+  justify-content: space-between; /* separacao para extremos da pagina do h1 para os menu de links  */
 }
 
 .list-items li a{
-  color: white;
+  color: white; /* cor dos links do menu no header */
+}
+
+.apresentacao{
+  height: 100vh; /* unidade vh de visualizacao da tela */
+  align-items: center; /* alinhamento do conteudo inline ao centro */
+  justify-content: space-between; /* afastamento para as margens dos itens */
+}
+
+.apresentacao .texto-apresentacao{
+  min-height: 200px; /* subir o texto de apresentacao */
+}
+
+.texto-apresentacao h1{
+  color: #122A57; /* cor do h1 igual o do layout */
+  font-size: 48px; /* aumento do h1 do texto */
+  margin-bottom: 10px; /* maior separacao do texto de baixo */
+}
+
+.texto-apresentacao a{ /* configuracao do botao */
+  background-color: #122A57; /* cor do preenchimento do botao */
+  color: #fff;/* cor do texto */
+  text-align: center; /* alinhamento horizontal do texto ao centro */
+  border-radius: 30px; /* arrredodamento dos bordos do botao */
+  width: 220px; /* largura do botao */
+  display: block; /* retira da disposicao inline */
+  text-decoration: none; /* remocao do sublinhado do link */
+  height: 50px; /* altura do botao */
+  line-height: 50px; /* altura da linha para centralizar o texto verticalmente no botao */
+  margin-top: 10px; /* separar o botao do texto acima */
+  margin-bottom: 10px; /* margem inferior do botao */
+}
+
+#quem-somos{
+  flex-direction: row-reverse; /* inverte a ordem em linha dos objetos */
+  align-items: center; /* alinhamento do conteudo inline ao centro */
+  justify-content: space-between; /* afastamento para as margens dos itens */
+}
+
+#quem-somos h2{ /* criar o elemento before puramente ilustrativo */
+  font-size: 32px;
+  color: #122A57;
+  display: flex; /* uso do display flex para utilizacao do before */
+  margin-bottom: 20px;
+}
+
+#quem-somos h2::before{ /* uso da tag before do flexbox */
+  content: ""; /* sem conteudo */
+  height: 50px; /* altura do traco */
+  width: 5px; /* largura do traco */
+  margin-right: 5px; /* separacao do texto */
+  background-color: #122A57; /* preenchimento do item */
+  position: relative;
+}
+
+#quem-somos p{
+  margin-bottom: 10px; /* separacao entre os paragrafos */
+  width: 90%; /* utilizacao de 90% do espaco do container */
+}
+
+#quem-somos img{
+  min-width: 420px; /* aumento da largura da imagem */
 }
