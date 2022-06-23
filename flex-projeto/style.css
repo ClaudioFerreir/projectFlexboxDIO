@@ -259,4 +259,27 @@ footer .footer{
   .apresentacao .texto-apresentacao{
     width: 100%;
   }
+
+  #quem-somos{
+    flex-direction: column-reverse;
+  }
+
+  .list-servicos{
+    flex-direction: column;
+  }
+
+  .item-servico img{
+    width: 50%;
+    margin: auto;
+  }
+
+  .list-planos{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .list-planos .item-plano{
+    max-width: 90%;
+    margin: auto;
+  }
 }
