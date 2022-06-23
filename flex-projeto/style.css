@@ -25,7 +25,6 @@ div img{ /* responsividade para as imagens */
   margin: auto; /* distribui margem na direita e esquerda proporcionalmente */
   width: 100%; /* distribuicao dos itens em ocupar o container */
   min-width: 320px; /* associado com a responsividade*/
-  padding: 10px 15px; /* melhorar a responsividade*/
 }
 
 header{
@@ -264,6 +263,11 @@ footer .footer{
     flex-direction: column-reverse;
   }
 
+  #quem-somos img{
+    min-width: 320px;
+    margin: auto;
+  }
+
   .list-servicos{
     flex-direction: column;
   }
@@ -281,5 +285,6 @@ footer .footer{
   .list-planos .item-plano{
     max-width: 90%;
     margin: auto;
+    width: 100%;
   }
 }
