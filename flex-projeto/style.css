@@ -118,9 +118,20 @@ header .menu{
 
 #servicos{
   flex-direction: column; /*tira os itens da disposicao row atribuida pela classe flex-container neste caso especifico servicos dos outros itens*/
+  padding: 100px 0; /* padding superior e inferior do conteudo dentro do container externo */
+}
+
+#servicos h2{
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 10px; /* separacao do texto para os icones */
 }
 
 .list-servicos{
   display: flex; /*disposicao inline(row) dos elementos*/
-  justify-content: space-around; /* separacao uniforme entre os itens*/
+  justify-content: space-around; /* separacao e alinhamento uniforme entre os itens*/
+}
+
+.list-servicos .item-servico{
+  text-align: center; /* alinhamento dos itens ao centro*/
 }
