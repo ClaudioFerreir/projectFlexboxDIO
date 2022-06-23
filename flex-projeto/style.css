@@ -173,3 +173,9 @@ header .menu{
   display: flex; /* arrumar os itens em um sentido horizontal(em linha row) */
   align-items: flex-end; /* alinhamento dos planos por pela ultima linha */
 }
+
+.item-plano{
+  flex: 1; /* ocupacao de todo o espaco do container com uma distribuicao de espaco igual */
+  border: 5px solid #122A57; /* determinacao das margens nos planos */
+  margin-right: 20px; /* separacao entre os quadros dos planos */
+}
