@@ -167,11 +167,17 @@ header .menu{
 #planos{
   flex-direction: column; /* usado para orientar o h2 planos para um plano de coluna como titulo */
   min-height: 100vh; /* tamanho proporciona 100% da visualizacao da tela */
+  padding-top: 50px; /* separacao do titulo com o banner acima */
+}
+
+#planos h2{
+  font-size: 32px;
 }
 
 .list-planos{
   display: flex; /* arrumar os itens em um sentido horizontal(em linha row) */
   align-items: flex-end; /* alinhamento dos planos por pela ultima linha */
+  justify-content: space-between; /* separacao entre os quadros dos planos*/
 }
 
 .item-plano{
@@ -179,6 +185,7 @@ header .menu{
   border: 5px solid #122A57; /* determinacao das margens nos planos */
   margin-right: 20px; /* separacao entre os quadros dos planos */
   padding: 10px; /* padding aplicado ao conteudo dos quadros */
+  max-width: 240px; /* definicao da largura dos quadros */
 }
 
 .item-plano .btn{
@@ -190,6 +197,8 @@ header .menu{
   font-size: 23px;
   display: flex; /* permite aplicacao de um pseudo elemento */
   flex-direction: column; /*usado para disposicao abaixo do texto e nao em linha*/
+  text-align: center; /* alinhamento do texto ao centro */
+  margin-top: 20px; /* adicionar mais espaco entre o titulo e o bordo superior */
 }
 
 .item-plano h3::after{ /* pseudo elemento */
@@ -197,4 +206,27 @@ header .menu{
   background-color: #122A57;
   width: 100%; /* largura do pseudo elemento */
   height: 3px; /* altura do pseudo elemento */
+  margin-top: 20px; /* separacao do pseudo elemento com o titulo */
+  margin-bottom: 10px; /* separacao da lista abaixo */
+}
+
+.item-plano ul{
+  padding: 10px 20px; /* paddding sup/inf e dir/esq do conteudo da lista */
+  display: flex;
+  flex-direction: column; /* adicionar uma disposicao de lista */
+  margin-bottom: 10px; /* espacamento maior da lista e do botao */
+}
+
+.item-plano ul li{
+  display: flex; /* flex item com display flex para incorporar o pseudo elemento */
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.item-plano ul li::before{
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #122A57;
+  margin-right: 5px;
 }
