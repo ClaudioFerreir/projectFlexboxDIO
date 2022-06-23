@@ -130,7 +130,7 @@ header .menu{
 
 .list-servicos{
   display: flex; /*disposicao inline(row) dos elementos*/
-  justify-content: space-around; /* separacao e alinhamento uniforme entre os itens*/
+  justify-content: space-between; /* separacao e alinhamento uniforme entre os itens*/
 }
 
 .list-servicos .item-servico{
@@ -147,7 +147,7 @@ header .menu{
   line-height: 50px; /* atraves da separacao entre linhas do texto*/
   padding: 5px 10px; /* padding sup e inf no texto do botao */
   color: #122A57; /* cor do texto */
-  font-size: 14px; /* tamanho da fonte do texto */
+  font-size: 12px; /* tamanho da fonte do texto */
   text-decoration: none; /* remocao do sublinhado do texto */
   font-weight: 700; /* concentracao de negrito */
 }
@@ -162,4 +162,14 @@ header .menu{
 .item-servico img{
   width: 80%; /* diminiui a largura dos elementos */
   margin: auto; /* configura a imagem para o centro do texto e botao com a margem automatica na direita e esquerda */
+}
+
+#planos{
+  flex-direction: column; /* usado para orientar o h2 planos para um plano de coluna como titulo */
+  min-height: 100vh; /* tamanho proporciona 100% da visualizacao da tela */
+}
+
+.list-planos{
+  display: flex; /* arrumar os itens em um sentido horizontal(em linha row) */
+  align-items: flex-end; /* alinhamento dos planos por pela ultima linha */
 }
