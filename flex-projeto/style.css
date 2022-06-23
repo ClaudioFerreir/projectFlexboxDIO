@@ -66,7 +66,7 @@ header .menu{
   margin-bottom: 10px; /* maior separacao do texto de baixo */
 }
 
-.texto-apresentacao a{ /* configuracao do botao */
+.btn{ /* configuracao do botao */
   background-color: #122A57; /* cor do preenchimento do botao */
   color: #fff;/* cor do texto */
   text-align: center; /* alinhamento horizontal do texto ao centro */
@@ -178,4 +178,23 @@ header .menu{
   flex: 1; /* ocupacao de todo o espaco do container com uma distribuicao de espaco igual */
   border: 5px solid #122A57; /* determinacao das margens nos planos */
   margin-right: 20px; /* separacao entre os quadros dos planos */
+  padding: 10px; /* padding aplicado ao conteudo dos quadros */
+}
+
+.item-plano .btn{
+  margin: auto; /* centraliza o botao com relaxao ao eixo horizontal no quadro */
+  margin-bottom: 20px;/* separar mais o botao sa borda inferior do quadro */
+}
+
+.item-plano h3{
+  font-size: 23px;
+  display: flex; /* permite aplicacao de um pseudo elemento */
+  flex-direction: column; /*usado para disposicao abaixo do texto e nao em linha*/
+}
+
+.item-plano h3::after{ /* pseudo elemento */
+  content: ""; /* sem conteudo e sim so o preenchimento */
+  background-color: #122A57;
+  width: 100%; /* largura do pseudo elemento */
+  height: 3px; /* altura do pseudo elemento */
 }
